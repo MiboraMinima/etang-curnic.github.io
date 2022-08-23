@@ -19,6 +19,15 @@ p {
   text-decoration: none;
 }
 
+.book .book-body .page-wrapper .page-inner section.normal .toc a {
+  color: black;
+  text-decoration: none;
+}
+.book .book-body .page-wrapper .page-inner section.normal .toc a:hover {
+  color: #00976f; /* darker color when hovering */
+  text-decoration: none;
+}
+
  /* all TOC list items, basically */
 
 .book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
@@ -45,40 +54,11 @@ p {
   background-color: #abd7d7;
 }
 
-/* Math */
-.math{
-  font:arial;
-}
-
 /* Image */
-.zoomDiv {
-  opacity: 0;
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 50;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 0px 50px #888888;
-  max-height:100%; 
-  overflow: scroll;
-}
-
 .caption {
-  font-style: italic; 
-}
-
-.zoom {
-  width:100%;
-  transition: transform .2s; /* Animation */
-  overflow: hidden;
-}
-.zoom:hover {
-  -ms-transform: scale(3) translate(30px); /* IE 9 */
-  -webkit-transform: scale(3) translate(30px); /* Safari 3-8 */
-  transform: scale(3) translate(30px);
-}
-.zoomImg {
-  width: 100%;
+  text-align: left; 
+  font-style: italic;
+  color: gray; 
 }
 
 /* Reference */
